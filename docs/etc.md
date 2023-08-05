@@ -30,6 +30,10 @@
 
 ## [GoQuality Dev Contents](https://github.com/Integerous/goQuality-dev-contents)
 
+## Atomic Design Pattern 예제
+
+- [github.com/sendbird/quickstart-calls-reactjs](https://github.com/sendbird/quickstart-calls-reactjs)
+
 ## Memoization
 
 - 렌더링이 매우 자주 일어나지 않는다면 memo 하지 말 것
