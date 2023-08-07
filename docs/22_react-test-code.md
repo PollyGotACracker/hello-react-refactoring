@@ -141,7 +141,8 @@ fireEvent.change(passwordInput, { target: { value: "password" } });
 
 ```js
 act(() => {
-  ReactDOM.createRoot(container).render(<Counter />);
+  const loginBtn = screen.getByRole("button", { name: /로그인/ });
+  userEvent.click(loginBtn);
 });
 ```
 

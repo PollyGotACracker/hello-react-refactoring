@@ -36,8 +36,17 @@
 
 ## Memoization
 
-- 렌더링이 매우 자주 일어나지 않는다면 memo 하지 말 것
-- 불필요한 캐싱, 연산
+- [d2.naver.com: Memoization](https://d2.naver.com/helloworld/9223303?ref=codenary)
+- [velog.io/@lky5697](https://velog.io/@lky5697/stop-using-usememo-now)
+- 불필요한 캐싱을 위한 연산은 오히려 성능 저하
+- memoization 이 필요한 경우
+  - 비용이 많이 드는 계산
+  - 자식 컴포넌트에 함수를 prop 으로 넘길 때
+  - 다른 hook(`useEffect` 등) 의 의존성에 사용될 때
+- memoization 이 필요하지 않은 경우
+  - 간단하고 빠르게 처리되는 계산
+  - 매우 자주 렌더링되는 컴포넌트
+  - 작고 간단한 컴포넌트
 
 ## useEffect 완벽 가이드 요약
 
