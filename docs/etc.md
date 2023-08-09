@@ -61,3 +61,35 @@
 ## AWS 에서 React 배포
 
 - [jasonkang14.github.io: AWS에서 React.js 배포](https://jasonkang14.github.io/aws/aws-amplify-with-react)
+
+## 화면 렌더링 최적화
+
+### css property 확인
+
+- [csstriggers.com](https://csstriggers.com/)  
+  css 의 각 property 가 어떤 pipeline 을 trigger 하는지 정리한 사이트
+
+### 최적화 방법
+
+- 효율적인 Layout 을 위해 DOM Element 의 개수는 약 1000개 정도로 제한
+- 애니메이션 처리 시 css transform, web animations 를 사용
+- GPU Rasterization: meta name 에 viewport 를 작성하면 컨텐츠를 GPU 를 통해 렌더링하여 약 10배의 속도 개선  
+  `<meta name="viewport" content="width=device-width, minimum-scale=1.0">`
+- Layer 는 30개 정도로 구성하여 Composite 과정에서 과도한 메모리 사용 방지
+- JS(DOM + CSSOM) - Layout - Paint - Composite 과정을 하나의 VSync tick 안에서 처리  
+  (VSync;수직동기화: 그래픽 카드의 프레임 생성과 모니터의 프레임 출력 동기화)
+
+## `npm dedupe`
+
+- deduplicate
+- package-lock.json 의 라이브러리 중복 줄이기
+
+## 네트워크 용어
+
+- Bandwidth(대역폭; 파이프의 내경):  
+  특정 시간 내에 송수신할 수 있는 데이터 패킷의 수
+  병목 현상과 연관
+- Latency(지연 시간; 파이프의 길이):  
+  하나의 데이터 패킷이 전송되어 목적지에 도달하는 데 소요되는 시간
+- Throughput(처리량; 파이프 안에서 흐르는 물):  
+  특정 시간 내에 성공적으로 송수신된 패킷의 실제 수
