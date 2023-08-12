@@ -11,11 +11,16 @@
 - 최초 로딩시간이 단축되는 이점이 있음
   - FCP, LCP, FID 개선 가능
   - [jasonkang14.github.io: 리액트 빌드 최적화](https://jasonkang14.github.io/react/optimzation-with-chat-gpt)
-- 브라우저 caching
-  - 각 chunk 파일의 id 를 사용
+- 브라우저 cache
+  - 각 chunk 파일의 id 를 사용하여 캐싱
 
 ## Lazy Loading
 
 - Lighthouse 측정 점수가 좋다고 해서 최적화가 끝난 것이 아니다.
 - `IntersectionObserver` API 사용
 - [jasonkang14.github.io: Lazy Loading](https://jasonkang14.github.io/react/lazy-loading-to-improve-web-vitals)
+
+## `npm dedupe`
+
+- deduplicate
+- package-lock.json 의 라이브러리 중복 줄이기

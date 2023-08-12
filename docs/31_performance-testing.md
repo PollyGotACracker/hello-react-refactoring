@@ -47,7 +47,7 @@
 
 - Chrome 개발자도구 / Chrome extension 설치 / PageSpeed Insights 사이트([링크](https://pagespeed.web.dev/))
 - production build 에서 확인  
-  (빌드 시 측정 결과 점수가 더 높다: Tree Shaking, Minification)
+  (빌드 시 최적화되어 web vital 이 개선된다: Tree Shaking, Minification)
 
 - 주요 기능
   - Performance: 성능

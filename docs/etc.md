@@ -79,11 +79,6 @@
 - JS(DOM + CSSOM) - Layout - Paint - Composite 과정을 하나의 VSync tick 안에서 처리  
   (VSync;수직동기화: 그래픽 카드의 프레임 생성과 모니터의 프레임 출력 동기화)
 
-## `npm dedupe`
-
-- deduplicate
-- package-lock.json 의 라이브러리 중복 줄이기
-
 ## 네트워크 용어
 
 - Bandwidth(대역폭; 파이프의 내경):  
